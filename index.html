@@ -2,10 +2,20 @@
 
 <head>
 	<meta charset="utf-8">
+	<form>
+	<label>Insert search here...<input type="text" name="q"/></label>
+	<label><input type="radio" name="searchEngine" id="1"/>Google</label>
+	<label><input type="radio" name="searchEngine" id="2"/>DuckDuckGo</label>
+	<label><input type="radio" name="searchEngine" id="3"/>Bing</label>
+	<label><input type="radio" name="searchEngine" id="4"/>Ask</label>
+	<button>Go!</button>
+</form>
 	<script>
-		// TODO: create a handler
+		let setSearchEngine = function(){
+		console.log("I'm gonna search ya!");
+		}
     window.addEventListener("load", function(){
-        // TODO: register the handler
+        document.getElementById(id).onclick = setSearchEngine(id);
     });
 	</script>
 </head>
